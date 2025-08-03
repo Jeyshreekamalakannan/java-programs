@@ -1,0 +1,284 @@
+Leap Year:
+import java.util.Scanner;
+public class test{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a = sc.nextInt();
+        if((a % 4 == 0 && a % 100 != 0)||(a % 400 == 0)){
+            System.out.println("Leap year");
+        }else{
+            System.out.println("Not Leap year");
+        }
+        sc.close();
+    }
+}
+
+Increment & Decrement:
+class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = a--;
+        a++;
+        int c = a++ + --b + ++a - --a;
+        System.out.println(c);
+    }
+}
+
+
+
+For Loop:
+import java.util.Scanner;
+class test{
+    public static void main(String[] args){
+        int a = 0;
+        for(int i = 0; i < 100; i++){
+            a++;
+            System.out.println("Ramani "+a);
+        }
+    }
+}
+
+
+
+
+While Loop:
+import java.util.Scanner;
+class test{
+    public static void main(String[] args){
+        int a = 0;
+        while(a < 50){
+            if(a % 2 == 0)
+            System.out.println(a);
+            a++;
+        }
+    }
+}
+
+
+
+Patterns:
+import java.util.Scanner;
+class test{
+    public static void main(String[] args){
+        for(int i = 1; i <= 5; i++){
+            for(int j = 0; j < i; j++){
+                System.out.print("*");
+            }
+        System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+class test{
+    public static void main(String[] args){
+        for(int i = 1; i <= 5; i++){
+            for(int j = 0; j < i; j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+        for(int p = 4; p >= 1; p--){
+            for(int k = 1; k <= p; k++){
+                System.out.print(" *");
+            }
+           System.out.println();
+        }
+    }
+}
+
+
+
+Reverse a number:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int input=12345;
+        int sum=0;
+        while(input>0){
+            int reverse = input%10;
+            sum=(sum*10)+reverse;
+            input/=10;
+        }
+        
+        System.out.println(sum);
+    }
+}
+
+
+Sum of Numbers:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n = sc.nextInt();
+        int i = 1;
+        int sum = 0;
+        while( i <= n){
+            sum = sum + i;
+            i++;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int input=12345;
+        int sum=0;
+        while(input>0){
+            int reverse = input%10;
+            sum=sum+reverse;
+            input/=10;
+        }
+        
+        System.out.println(sum);
+    }
+}
+
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int a=12345;
+        int sum=0;
+        while(input>0){
+            int reverse = input%10;
+            int a = reverse * reverse * reverse;
+            sum = sum + a;
+            input/=10;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+Armstrong number:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a num: ");
+        int a = sc.nextInt();
+        int sum = 0;
+        while(a > 0){
+            int b = a%10;
+            int c = b * b * b ;
+            sum = sum + c;
+            a/=10;
+            if(a == sum){
+                System.out.println("Amstrong");
+            } else {
+                System.out.println("Not an Amstrong");
+            }
+        }
+    }
+}
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a num: ");
+        int a = sc.nextInt();
+        int org = a;
+        int sum = 0;
+        while(a > 0){
+            int b = a%10;
+            int c = b * b * b ;
+            sum = sum + c;
+            a/=10;
+        }
+        System.out.println(sum);
+        if(sum == org)
+                System.out.println("Amstrong");
+        else
+                System.out.println("Not an Amstrong");
+    }
+}
+
+
+Programs on Arrays:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] a = {10,20,30,40};
+        int[] b = {50,60,70,80,90,100};
+        int[] c = new int[a.length + b.length];
+        for(int i = 0; i < 4; i++){
+            c[i] = a[i];
+        }
+        for(int i = 0; i <= 5; i++){
+            c[a.length + i] = b[i];
+        }
+        for(int num : c){
+            System.out.println(num);
+        }
+    }
+}
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] a = {10,20,30,40};
+        int[] b = {40,50,60};
+        int c = a.length;
+        int d = b.length;
+        for(int i = 0; i < c; i++){
+            for(int j=0;j<d;j++){
+                if(a[i]==b[j])
+                    System.out.println(a[i]);
+            }
+        }
+    }
+}
+
+
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,6};
+        for(int i = 0; i < arr.length; i++){
+                if(arr[i]==6)
+                    arr[i]=5;
+                System.out.println(arr[i]); 
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner =new Scanner (System.in);
+        System.out.println("Enter a positive integer");
+        int n = scanner.nextInt();
+        int count=0;
+        while(n!=1){
+            if (n%2==0){
+                System.out.println(n);
+                n=n/2;
+            }        
+            else{
+                System.out.println(n);
+                n = 3*n+1;
+            }
+            count+=1;
+        }
+        System.out.println("Count="+count);
+        scanner.close();
+    }
+}
